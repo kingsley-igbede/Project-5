@@ -22,7 +22,7 @@ On Project5-Server Linux Server install MySQL Server software
 
 ## Step 3
 
-On Project5-Client Linux Server install MySQL Client software
+*On Project5-Client Linux Server install MySQL Client software*
 
 `sudo apt update -y`
 
@@ -35,11 +35,22 @@ On Project5-Client Linux Server install MySQL Client software
 
 ## Step 4
 
-Create a new entry in ‘Inbound rules’ in ‘Project5-server’ Security Groups. For extra security
+*Create a new entry in ‘Inbound rules’ in ‘Project5-server’ Security Groups. For extra security*
 
 Note: Allow access only to the specific local IP address of ‘Project5-client’
 
 ![server security status](./images/server-security-group.jpg)
+
+## Step 5
+
+*Configure MySQL server to allow connections from remote hosts*
+
+`sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf`
+
+Replace Bind Address ‘127.0.0.1’ with ‘0.0.0.0’
+
+`sudo systemctl restart mysql.service`
+
 
 
 
