@@ -20,7 +20,6 @@ On Project5-Server Linux Server install MySQL Server software
 
 ![server status](./images/server-status.jpg)
 
-
 ## Step 3
 
 On Project5-Client Linux Server install MySQL Client software
@@ -32,6 +31,18 @@ On Project5-Client Linux Server install MySQL Client software
 `which mysql`
 
 ![client status](./images/client-status.jpg)
+
+
+## Step 4
+
+Create a new entry in ‘Inbound rules’ in ‘Project5-server’ Security Groups. For extra security
+
+Note: Allow access only to the specific local IP address of ‘Project5-client’
+
+![server security status](./images/server-security-group.jpg)
+
+
+
 
 
 
