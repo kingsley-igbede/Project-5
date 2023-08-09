@@ -51,7 +51,20 @@ Replace Bind Address ‘127.0.0.1’ with ‘0.0.0.0’
 
 `sudo systemctl restart mysql.service`
 
+## Step 6
+*From Project5-client Linux Server i connected remotely to Project5-server Database Engine without using SSH. i use the mysql utility to perform this action*
 
+`mysql -u kingsley -h 172.31.21.122 -p`
+
+![client server database connect](./images/client-server-connect.jpg)
+
+## Step 7
+
+*Connect to a remote MySQL server and can perform SQL queries*
+
+`show databases;`
+
+![client-server database status](./images/client-server-database-status.jpg)
 
 
 
