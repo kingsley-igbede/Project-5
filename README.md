@@ -27,4 +27,17 @@ MySQL server uses TCP port 3306 by default, so to open it, create a new entry in
 
 NOTE: For extra security, i did not allow all IP addresses to reach the ‘Project5-server’ – allowed access only to the specific local IP address of your ‘Project5-client’.
 
+## Step 5:
+
+Configured Project5-server to allow connections from remote hosts.
+
+## Step 6:
+
+From Project5-client Linux Server connect remotely to Project5-server Database Engine without using SSH. 
+
+I used the mysql utility to perform this action.
+
+## Step 7:
+
+Checked that i have successfully connected to a remote Project5-server and can perform SQL queries
 
